@@ -953,3 +953,89 @@ INSERT INTO boxoffice VALUES (4, 8.7, 340000000, 270000000);
 ![alt text](image-36.png)
 
 ---
+
+# SQL Lesson 14: Updating rows
+
+In addition to adding new data, a common task is to update existing data, which can be done using an UPDATE statement. Similar to the INSERT statement, you have to specify exactly which table, columns, and rows to update. In addition, the data you are updating has to match the data type of the columns in the table schema.
+
+Update statement with values
+
+```sql
+UPDATE mytable
+SET column = value_or_expr, 
+    other_column = another_value_or_expr, 
+    …
+WHERE condition;
+```
+
+The statement works by taking multiple column/value pairs, and applying those changes to each and every row that satisfies the constraint in the WHERE clause.
+
+## Taking care
+
+Most people working with SQL will make mistakes updating data at one point or another. Whether it's updating the wrong set of rows in a production database, or accidentally leaving out the WHERE clause (which causes the update to apply to all rows), you need to be extra careful when constructing UPDATE statements.
+
+One helpful tip is to always write the constraint first and test it in a SELECT query to make sure you are updating the right rows, and only then writing the column/value pairs to update.
+
+## Exercise
+
+It looks like some of the information in our Movies database might be incorrect, so go ahead and fix them through the exercises below.
+
+### The director for A Bug's Life is incorrect, it was actually directed by John Lasseter
+
+```sql
+UPDATE movies
+SET director = "John Lasseter"
+WHERE title LIKE "A Bug's Life";
+```
+
+![alt text](image-37.png)
+
+### The year that Toy Story 2 was released is incorrect, it was actually released in 1999
+
+```sql
+UPDATE movies
+SET year = 1999
+WHERE title LIKE "Toy Story 2";
+```
+
+![alt text](image-38.png)
+
+### Both the title and director for Toy Story 8 is incorrect! The title should be "Toy Story 3" and it was directed by Lee Unkrich
+
+```sql
+UPDATE movies
+SET title = "Toy Story 3",
+    director = "Lee Unkrich"
+WHERE title LIKE "Toy Story 8";
+```
+
+![alt text](image-39.png)
+
+---
+
+# SQL Lesson 15: Deleting rows
+
+When you need to delete data from a table in the database, you can use a DELETE statement, which describes the table to act on, and the rows of the table to delete through the WHERE clause.
+
+Delete statement with condition
+
+```sql
+DELETE FROM mytable
+WHERE condition;
+```
+
+If you decide to leave out the WHERE constraint, then all rows are removed, which is a quick and easy way to clear out a table completely (if intentional).
+
+## Taking extra care
+
+Like the UPDATE statement from last lesson, it's recommended that you run the constraint in a SELECT query first to ensure that you are removing the right rows. Without a proper backup or test database, it is downright easy to irrevocably remove data, so always read your DELETE statements twice and execute once.
+
+## Exercise
+
+The database needs to be cleaned up a little bit, so try and delete a few rows in the tasks below.
+
+### This database is getting too big, lets remove all movies that were released before 2005.
+
+```sql
+
+```
