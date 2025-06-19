@@ -1,3 +1,26 @@
+# Table of Contents
+
+- [SQL Lesson 1: SELECT queries](#sql-lesson-1-select-queries)
+- [SQL Lesson 2: Queries with constraints (Pt. 1)](#sql-lesson-2-queries-with-constraints-pt-1)
+- [SQL Lesson 3: Queries with constraints (Pt. 2)](#sql-lesson-3-queries-with-constraints-pt-2)
+- [SQL Lesson 4: Filtering and sorting Query results](#sql-lesson-4-filtering-and-sorting-query-results)
+- [SQL Review: Simple SELECT Queries (With Different DataBase)](#sql-review-simple-select-queries-with-different-database)
+- [SQL Lesson 6: Multi-table queries with JOINs](#sql-lesson-6-multi-table-queries-with-joins)
+- [SQL Lesson 7: OUTER JOINs](#sql-lesson-7-outer-joins)
+- [SQL Lesson 8: A short note on NULLs](#sql-lesson-8-a-short-note-on-nulls)
+- [SQL Lesson 9: Queries with expressions](#sql-lesson-9-queries-with-expressions)
+- [SQL Lesson 10: Queries with aggregates (Pt. 1)](#sql-lesson-10-queries-with-aggregates-pt-1)
+- [SQL Lesson 11: Queries with aggregates (Pt. 2)](#sql-lesson-11-queries-with-aggregates-pt-2)
+- [SQL Lesson 12: Order of execution of a Query](#sql-lesson-12-order-of-execution-of-a-query)
+- [SQL Lesson 13: Inserting rows](#sql-lesson-13-inserting-rows)
+- [SQL Lesson 14: Updating rows](#sql-lesson-14-updating-rows)
+- [SQL Lesson 15: Deleting rows](#sql-lesson-15-deleting-rows)
+- [SQL Lesson 16: Creating tables](#sql-lesson-16-creating-tables)
+- [SQL Lesson 17: Altering tables](#sql-lesson-17-altering-tables)
+- [SQL Lesson 18: Dropping tables](#sql-lesson-18-dropping-tables)
+- [SQL Lesson 19: Subqueries](#sql-lesson-19-subqueries)
+- [SQL Lesson 20: Unions, Intersections & Exceptions](#sql-lesson-20-unions-intersections--exceptions)
+
 # SQL Lesson 1: SELECT queries
 
 To retrieve data from a SQL database, we need to write SELECT statements, which are often colloquially refered to as queries. A query in itself is just a statement which declares what data we are looking for, where to find it in the database, and optionally, how to transform it before it is returned. It has a specific syntax though, which is what we are going to learn in the following exercises.
@@ -270,7 +293,7 @@ If you think about websites like Reddit or Pinterest, the front page is a list o
 
 There are a few concepts in this lesson, but all are pretty straight-forward to apply. To spice things up, we've gone and scrambled the Movies table for you in the exercise to better mimic what kind of data you might see in real life. Try and use the necessary keywords and clauses introduced above in your queries.
 
-### List all directors of Pixar movies (alphabetically), without duplicates 
+### List all directors of Pixar movies (alphabetically), without duplicates
 
 ```sql
 SELECT DISTINCT director FROM movies ORDER BY director ASC;
@@ -337,8 +360,7 @@ SELECT city, population FROM north_american_cities WHERE country = 'Canada';
 
 ![alt text](image-6.png)
 
-
-### Order all the cities in the United States by their latitude from north to south 
+### Order all the cities in the United States by their latitude from north to south
 
 First know the north, south, east and west from latitude and longitude
 
@@ -633,7 +655,7 @@ ON
 
 ![alt text](image-21.png)
 
-### List all movies and their ratings in percent 
+### List all movies and their ratings in percent
 
 ### The Float One
 
@@ -667,7 +689,6 @@ SELECT title FROM movies WHERE (year % 2) = 0;
 ---
 
 # SQL Lesson 10: Queries with aggregates (Pt. 1)
-
 
 In addition to the simple expressions that we introduced last lesson, SQL also supports the use of aggregate expressions (or functions) that allow you to summarize information about a group of rows of data. With the Pixar database that you've been using, aggregate functions can be used to answer questions like, "How many movies has Pixar produced?", or "What is the highest grossing Pixar film each year?".
 
@@ -928,13 +949,13 @@ INSERT INTO boxoffice
 VALUES (1, 9.9, 283742034 / 1000000);
 ```
 
-### Exercise
+## Exercise
 
 In this exercise, we are going to play studio executive and add a few movies to the Movies to our portfolio. In this table, the Id is an auto-incrementing integer, so you can try inserting a row with only the other columns defined.
 
 Since the following lessons will modify the database, you'll have to manually run each query once they are ready to go.
 
-### Add the studio's new production, Toy Story 4 to the list of movies (you can use any director) 
+### Add the studio's new production, Toy Story 4 to the list of movies (you can use any director)
 
 ```sql
 INSERT INTO movies
@@ -944,7 +965,7 @@ VALUES ("Toy Story 4","Pete Docter",2025,45);
 
 ![alt text](image-35.png)
 
-### Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and made 340 million domestically and 270 million internationally. Add the record to the BoxOffice table.
+### Toy Story 4 has been released to critical acclaim! It had a rating of 8.7, and made 340 million domestically and 270 million internationally. Add the record to the BoxOffice table
 
 ```sql
 INSERT INTO boxoffice VALUES (4, 8.7, 340000000, 270000000);
@@ -1034,8 +1055,281 @@ Like the UPDATE statement from last lesson, it's recommended that you run the co
 
 The database needs to be cleaned up a little bit, so try and delete a few rows in the tasks below.
 
-### This database is getting too big, lets remove all movies that were released before 2005.
+### This database is getting too big, lets remove all movies that were released before 2005
 
 ```sql
-
+DELETE FROM movies
+    WHERE year < 2005;
 ```
+
+![alt text](image-40.png)
+
+### Andrew Stanton has also left the studio, so please remove all movies directed by him
+
+```sql
+DELETE FROM movies
+    WHERE director LIKE "Andrew Stanton";
+```
+
+![alt text](image-41.png)
+
+---
+
+## SQL Lesson 16: Creating tables
+
+When you have new entities and relationships to store in your database, you can create a new database table using the CREATE TABLE statement.
+
+Create table statement w/ optional table constraint and default value
+
+```sql
+CREATE TABLE IF NOT EXISTS mytable (
+    column DataType TableConstraint DEFAULT default_value,
+    another_column DataType TableConstraint DEFAULT default_value,
+    …
+);
+```
+
+The structure of the new table is defined by its table schema, which defines a series of columns. Each column has a name, the type of data allowed in that column, an optional table constraint on values being inserted, and an optional default value.
+
+If there already exists a table with the same name, the SQL implementation will usually throw an error, so to suppress the error and skip creating a table if one exists, you can use the IF NOT EXISTS clause.
+
+## Table data types
+
+Different databases support different data types, but the common types support numeric, string, and other miscellaneous things like dates, booleans, or even binary data. Here are some examples that you might use in real code.
+
+![alt text](image-42.png)
+
+## Table constraints
+
+We aren't going to dive too deep into table constraints in this lesson, but each column can have additional table constraints on it which limit what values can be inserted into that column. This is not a comprehensive list, but will show a few common constraints that you might find useful.
+
+![alt text](image-43.png)
+
+## An example
+
+Here's an example schema for the Movies table that we've been using in the lessons up to now.
+
+Movies table schema
+
+```sql
+CREATE TABLE movies (
+    id INTEGER PRIMARY KEY,
+    title TEXT,
+    director TEXT,
+    year INTEGER, 
+    length_minutes INTEGER
+);
+```
+
+## Exercise
+
+In this exercise, you'll need to create a new table for us to insert some new rows into.
+
+## Create a new table named Database with the following columns
+
+* Name A string (text) describing the name of the database
+* Version A number (floating point) of the latest version of this database
+* Download_count An integer count of the number of times this database was downloaded
+
+This table has no constraints.
+
+```sql
+CREATE TABLE Database(
+Name TEXT,
+Version FLOAT,
+Download_count INTEGER
+);
+```
+
+---
+
+## SQL Lesson 17: Altering tables
+
+As your data changes over time, SQL provides a way for you to update your corresponding tables and database schemas by using the ALTER TABLE statement to add, remove, or modify columns and table constraints.
+
+## Adding columns
+
+The syntax for adding a new column is similar to the syntax when creating new rows in the CREATE TABLE statement. You need to specify the data type of the column along with any potential table constraints and default values to be applied to both existing and new rows. In some databases like MySQL, you can even specify where to insert the new column using the FIRST or AFTER clauses, though this is not a standard feature.
+
+> Altering table to add new column(s)
+
+```sql
+ALTER TABLE mytable
+ADD column DataType OptionalTableConstraint 
+    DEFAULT default_value;
+```
+
+## Removing columns
+
+Dropping columns is as easy as specifying the column to drop, however, some databases (including SQLite) don't support this feature. Instead you may have to create a new table and migrate the data over.
+
+> Altering table to remove column(s)
+
+```sql
+ALTER TABLE mytable
+DROP column_to_be_deleted;
+```
+
+## Renaming the table
+
+If you need to rename the table itself, you can also do that using the RENAME TO clause of the statement.
+
+> Altering table name
+
+```sql
+ALTER TABLE mytable
+RENAME TO new_table_name;
+```
+
+## Other changes
+
+Each database implementation supports different methods of altering their tables, so it's always best to consult your database docs before proceeding: MySQL, Postgres, SQLite, Microsoft SQL Server.
+
+## Exercise
+
+Our exercises use an implementation that only support adding new columns, so give that a try below.
+
+### Add a column named Aspect_ratio with a FLOAT data type to store the aspect-ratio each movie was released in
+
+```sql
+ALTER TABLE movies
+    ADD Aspect_ratio FLOAT;
+```
+
+![alt text](image-44.png)
+
+### Add another column named Language with a TEXT data type to store the language that the movie was released in. Ensure that the default for this language is English
+
+```sql
+ALTER TABLE movies
+    ADD Language TEXT DEFAULT "English";
+```
+
+![alt text](image-45.png)
+
+---
+
+# SQL Lesson 18: Dropping tables
+
+In some rare cases, you may want to remove an entire table including all of its data and metadata, and to do so, you can use the DROP TABLE statement, which differs from the DELETE statement in that it also removes the table schema from the database entirely.
+
+Drop table statement
+
+```sql
+DROP TABLE IF EXISTS mytable;
+```
+
+Like the CREATE TABLE statement, the database may throw an error if the specified table does not exist, and to suppress that error, you can use the IF EXISTS clause.
+
+In addition, if you have another table that is dependent on columns in table you are removing (for example, with a FOREIGN KEY dependency) then you will have to either update all dependent tables first to remove the dependent rows or to remove those tables entirely.
+
+## Exercise
+
+We've reached the end of our exercises, so lets clean up by removing all the tables we've worked with.
+
+### We've sadly reached the end of our lessons, lets clean up by removing the Movies table
+
+```sql
+DROP TABLE IF EXISTS movies;
+```
+
+### And drop the BoxOffice table as well
+
+```sql
+DROP TABLE IF EXISTS boxoffice;
+```
+
+---
+
+# SQL Lesson 19: Subqueries
+
+You might have noticed that even with a complete query, there are many questions that we can't answer about our data without additional post, or pre, processing. In these cases, you can either make multiple queries and process the data yourself, or you can build a more complex query using SQL subqueries.
+
+## Example: General subquery
+
+Lets say your company has a list of all Sales Associates, with data on the revenue that each Associate brings in, and their individual salary. Times are tight, and you now want to find out which of your Associates are costing the company more than the average revenue brought per Associate.
+
+First, you would need to calculate the average revenue all the Associates are generating:
+
+```sql
+SELECT AVG(revenue_generated)
+FROM sales_associates;
+```
+
+And then using that result, we can then compare the costs of each of the Associates against that value. To use it as a subquery, we can just write it straight into the WHERE clause of the query:
+
+```sql
+SELECT *
+FROM sales_associates
+WHERE salary > 
+   (SELECT AVG(revenue_generated)
+    FROM sales_associates);
+```
+
+As the constraint is executed, each Associate's salary will be tested against the value queried from the inner subquery.
+
+A subquery can be referenced anywhere a normal table can be referenced. Inside a FROM clause, you can JOIN subqueries with other tables, inside a WHERE or HAVING constraint, you can test expressions against the results of the subquery, and even in expressions in the SELECT clause, which allow you to return data directly from the subquery. They are generally executed in the same logical order as the part of the query that they appear in, as described in the last lesson.
+
+Because subqueries can be nested, each subquery must be fully enclosed in parentheses in order to establish proper hierarchy. Subqueries can otherwise reference any tables in the database, and make use of the constructs of a normal query (though some implementations don't allow subqueries to use LIMIT or OFFSET).
+
+## Correlated subqueries
+
+A more powerful type of subquery is the correlated subquery in which the inner query references, and is dependent on, a column or alias from the outer query. Unlike the subqueries above, each of these inner queries need to be run for each of the rows in the outer query, since the inner query is dependent on the current outer query row.
+
+## Example: Correlated subquery
+
+Instead of the list of just Sales Associates above, imagine if you have a general list of Employees, their departments (engineering, sales, etc.), revenue, and salary. This time, you are now looking across the company to find the employees who perform worse than average in their department.
+
+For each employee, you would need to calculate their cost relative to the average revenue generated by all people in their department. To take the average for the department, the subquery will need to know what department each employee is in:
+
+```sql
+SELECT *
+FROM employees
+WHERE salary > 
+   (SELECT AVG(revenue_generated)
+    FROM employees AS dept_employees
+    WHERE dept_employees.department = employees.department);
+
+These kinds of complex queries can be powerful, but also difficult to read and understand, so you should take care using them. If possible, try and give meaningful aliases to the temporary values and tables. In addition, correlated subqueries can be difficult to optimize, so performance characteristics may vary across different databases.
+
+## Existence tests
+
+When we introduced WHERE constraints in Lesson 2: Queries with constraints, the IN operator was used to test whether the column value in the current row existed in a fixed list of values. In complex queries, this can be extended using subqueries to test whether a column value exists in a dynamic list of values.
+
+Select query with subquery constraint
+
+```sql
+SELECT *, …
+FROM mytable
+WHERE column
+    IN/NOT IN (SELECT another_column
+               FROM another_table);
+```
+
+When doing this, notice that the inner subquery must select for a column value or expression to produce a list that the outer column value can be tested against. This type of constraint is powerful when the constraints are based on current data.
+
+---
+
+# SQL Lesson 20: Unions, Intersections & Exceptions
+
+When working with multiple tables, the UNION and UNION ALL operator allows you to append the results of one query to another assuming that they have the same column count, order and data type. If you use the UNION without the ALL, duplicate rows between the tables will be removed from the result.
+
+Select query with set operators
+
+```sql
+SELECT column, another_column
+   FROM mytable
+UNION / UNION ALL / INTERSECT / EXCEPT
+SELECT other_column, yet_another_column
+   FROM another_table
+ORDER BY column DESC
+LIMIT n;
+```
+
+In the order of operations as defined in Lesson 12: Order of execution, the UNION happens before the ORDER BY and LIMIT. It's not common to use UNIONs, but if you have data in different tables that can't be joined and processed, it can be an alternative to making multiple queries on the database.
+
+Similar to the UNION, the INTERSECT operator will ensure that only rows that are identical in both result sets are returned, and the EXCEPT operator will ensure that only rows in the first result set that aren't in the second are returned. This means that the EXCEPT operator is query order-sensitive, like the LEFT JOIN and RIGHT JOIN.
+
+Both INTERSECT and EXCEPT also discard duplicate rows after their respective operations, though some databases also support INTERSECT ALL and EXCEPT ALL to allow duplicates to be retained and returned.
+
+---
