@@ -1,0 +1,12 @@
+1. Modem
+2. Router
+3. Hub
+4. Switch (2 Level Switches, 3 Level Switches)
+5. Topologies (Ring, Star, Mesh, Bus, Hybrid, Tree)
+6. Firewall and its Types
+7. Bridges
+8. NIC
+9. LAN, MAN, WAN, PAN
+10. Modes of Data Transmission (Simple, Half Duplex, Full Duplex)
+11. CSMA/CD
+12. 

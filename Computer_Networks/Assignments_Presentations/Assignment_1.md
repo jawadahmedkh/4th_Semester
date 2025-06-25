@@ -3,88 +3,164 @@
 $\text{Name: Jawad Ahmed}$
 $\text{Roll No: 04}$
 
-## $\text{Latest Trends in Computer Networks}$
+## $\text{Data Base Models or Types}$
 
-{Network Trends refers to new technologies, concpets and practices that improves how data is transmitted, stored and managed. These trends reflect the increasing need for faster, more secure and scalable networks.}
-
-These trends are important to enable better connectivity and faster communication. It supports emerging technologies like AI, IoT and Cloud Computing. It also addresses growing demands for data security and user privacy.
-
-Following are the some trends in computer networks:
-
-### $\text{1. AI-Powered Network Automation}$
-
-AI and machine learning (ML) are becoming foundational in network management, helping 
-automate repetitive tasks and enhance decision-making with predictive insights.
-
-#### $\text{Key Benefits}$
-
-* Real-time analytics for proactive network management.
-* Reduced operational costs through automation of network monitoring and maintenance.
-* Improved accuracy and efficiency in identifying network issues before they impact users.
-
-### $\text{2. 5G and Private 5G Networks}$
-
-5G technology is transforming connectivity with faster speeds, reduced latency, and 
-higher device capacity. Organizations in critical sectors like healthcare, logistics, and manufacturing are increasingly adopting private 5G networks for enhanced control and security.
-
-#### $\text{Key Benefits}$
-
-* Enhanced data privacy and control for businesses.
-* Increased reliability and faster data transmission.
-* Scalable connectivity for IoT devices, leading to greater operational efficiency.
-
-### $\text{3. Newtwork as Service (NaaS)}$
-
-NaaS provides organizations with flexible, subscription-based networking solutions, allowing them to scale their network infrastructure as needed without significant capital expenditure. By using a cloud-like model for network services, companies can quickly adjust their networking capabilities to meet demand.
-
-#### $\text{Key Benefits}$
-
-* Cost of savings by eliminating the need for upfront infrastructure investment.
-* Flexible network managment with scalable and customizable options.
-
-### $\text{4. Zero Trust Network Access (ZTNA)}$
-
-The increase in cyber threats has made Zero Trust Network Access (ZTNA) a top priority
-for organizations. ZTNA is a security model based on the principle of "never trust, always verify,"
-enforcing strict identity verification for every user or device trying to access the network.
-
-#### $\text{Key Benefits}$
-
-* Enhanced network security through strict access control.
-* Reduced vulnerability to data breaches and insider threats.
-* Improved compliance with security regulations.
-
-### $\text{5. Edge Computing and IoT Integration}$
-
-With the proliferation of IoT devices, edge computing has become essential for managing
-and processing data closer to where it is generated. By 2024, edge computing will support real-time
-data processing for IoT devices in industries like manufacturing, healthcare, and retail.
-
-#### $\text{Key Benefits}$
-
-* Reduced latency and faster response times for IoT applications.
-* Lower bandwidth costs by processing data locally.
-* Enhanced performance in real-time applications and remote environments.
-
-### $\text{6. Wi-Fi 7 Adoption}$
-
-As the next evolution in Wi-Fi technology, Wi-Fi 7 offers significant improvements in
-speed, capacity, and efficiency, particularly in high-density environments like offices, stadiums, and
-smart cities. Wi-Fi 7 is expected to be widely available by late 2024, enabling faster and more reliable
-wireless connections.
-
-#### $\text{Key Benefits}$
-
-* Increased speed and reduced interference in high-density areas.
-* Improved support for bandwidth-intensive applications.
-* Enhanced user experience with faster, more stable wireless connections.
-
-### $\text{Conclusion}$
-
-Networking trends in 2025 are centered around automation, flexibility, and security, with a strong
-emphasis on supporting emerging technologies like IoT, 5G, and edge computing. These
-advancements will not only improve efficiency but also open up new opportunities across various
-sectors. Businesses that embrace these trends can expect greater agility, cost savings, and a more
-robust networking foundation for the future.
+Following are the some types or models of **DataBase**:
 
 ---
+
+### $\text{1. Centralized Database}$
+
+A centralized database is a type of database that is stored, managed, and maintained in a single central location, such as one server or a mainframe computer. All users and applications that need to access the data must do so through this central point.
+
+#### $\text{Example}$
+
+A university with a centralized database stores all student records, course registrations, and exam results on a single server.
+
+---
+
+### $\text{2. Decentralized Database}$
+
+A decentralized database is a type of database system where data is stored across multiple locations or devices, and no single central authority controls the entire database. Each location (or node) operates independently and may have its own processing power and storage.
+
+#### $\text{Example}$
+
+Blockchain technology (e.g., Bitcoin, Ethereum) uses a decentralized database model where each participant (node) has a copy of the ledger and validates transactions without relying on a central authority.
+
+---
+
+### $\text{3. Relational Database}$
+
+A Relational Database (RDB) is a type of database that stores data in tables (also called relations). Each table consists of rows (records) and columns (fields). It uses Structured Query Language (SQL) for querying and managing data.
+
+#### $\text{Example}$
+
+MySQL, PostgreSQL etc.
+
+---
+
+### $\text{4. NO SQL}$
+
+NoSQL stands for "Not Only SQL", and refers to a broad class of non-relational databases designed to handle large volumes of unstructured, semi-structured, or rapidly changing data. Unlike relational databases, NoSQL databases do not use fixed schemas or SQL as their primary query language.
+
+#### $\text{Example}$
+
+MongoDB is one the best example of NO SQL.
+
+---
+
+### $\text{5. Cloud Database}$
+
+A Cloud Database is a database that runs on a cloud computing platform rather than on-premises infrastructure. It can be hosted, managed, and accessed remotely via the internet. Cloud databases can be either SQL (relational) or NoSQL (non-relational), and they are designed to offer scalability, reliability, and flexibility.
+
+#### $\text{Example}$
+
+Amazon, Google Cloud, Microsoft etc.
+
+---
+
+### $\text{6. Object-Oriented Database (OODB)}$
+
+An Object-Oriented Database (OODB) is a type of database that integrates object-oriented programming principles with database technology. Instead of storing data in tables (like in relational databases), it stores data as objects, just like how data is represented in object-oriented programming languages (e.g., C++, Java, Python).
+
+#### $\text{Example}$
+
+db4o (Database for Objects), ObjectDB, Versant Object Database, InterSystems Caché, GemStone/S
+
+### $\text{7. Hierarchical Database}$
+
+A Hierarchical Database is a type of database that organizes data in a tree-like structure. Data is stored in records (nodes), and each record is connected to its parent and children in a parent-child relationship. This structure is similar to a family tree or a folder directory in a computer.
+
+#### $\text{Example}$
+
+Early IBM Information Management System (IMS)
+
+---
+
+### $\text{8. Network Database}$
+
+The Network Database Model is a type of database model that represents data in a graph structure rather than a strict hierarchy. Unlike the hierarchical model, in the network model, a record (child node) can have multiple parent nodes, allowing for many-to-many relationships..
+
+#### $\text{Example}$
+
+IDMS (Integrated Database Management System), Raima Database Manager, TurboIMAGE
+
+---
+
+### $\text{9. Personal Database}$
+
+A Personal Database is a database system designed for use by a single user on a personal device, such as a PC or laptop. It is typically lightweight, easy to set up, and used for managing small amounts of data like contacts, budgets, projects, or personal collections.
+
+#### $\text{Example}$
+
+Microsoft Access, SQLite, MySQL
+
+---
+
+### $\text{10. Operational Database}$
+
+An Operational Database (also called an OLTP database, which stands for Online Transaction Processing) is a database that is used to manage and store real-time data generated from daily business operations. It supports fast read/write operations and is optimized for high-performance transactional tasks like insertions, updates, and deletions.
+
+#### $\text{Example}$
+
+PostgreSQL, MySQL, Microsoft SQL Server.
+
+---
+
+### $\text{11. Enterprise Database}$
+
+An Enterprise Database is a large-scale, robust, and secure database system designed to handle the complex and massive data needs of an entire organization or enterprise. These databases support thousands to millions of transactions, users, and applications across multiple departments, often in real-time.
+
+#### $\text{Example}$
+
+Oracle, SAP HANA etc.
+
+---
+
+### $\text{ACID Properties}$
+
+**ACID** is an acronym that represents the **four key properties** that ensure reliable processing of **database transactions**. These properties are essential for maintaining **data integrity**, especially in systems that support **concurrent access** and **unexpected failures** (like power loss or crashes).
+
+---
+
+### 1. **A – Atomicity**
+
+> Ensures that a **transaction is all-or-nothing**.
+
+*Example:*
+In a banking app, if you transfer money from Account A to Account B:
+
+* Deducting from A and adding to B **must both succeed**.
+* If one fails, the other **must be undone**.
+
+---
+
+### 2. **C – Consistency**
+
+> Ensures that a transaction **leaves the database in a valid state**.
+
+*Example:*
+If there's a rule that no account balance can be negative, the system will **reject any transaction** that violates this.
+
+---
+
+### 3. **I – Isolation**
+
+> Ensures that **concurrent transactions** do not interfere with each other.
+
+*Example:*
+Two users booking the last seat in a movie theater:
+
+* Only one should succeed. Isolation ensures proper handling.
+
+---
+
+### 4. **D – Durability**
+
+> Ensures that **once a transaction is committed**, it is **permanently saved**, even in case of power failure or crash.
+
+*Example:*
+If a bank confirms your transaction, it **must not be lost**, even if the system crashes right after.
+
+---
+
