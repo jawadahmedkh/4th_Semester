@@ -17,7 +17,13 @@ A centralized database is a type of database that is stored, managed, and mainta
 
 A university with a centralized database stores all student records, course registrations, and exam results on a single server.
 
+#### $\text{Diagram}$
+
+![alt text](image.png)
+
 ---
+
+###
 
 ### $\text{2. Decentralized Database}$
 
@@ -26,6 +32,10 @@ A decentralized database is a type of database system where data is stored acros
 #### $\text{Example}$
 
 Blockchain technology (e.g., Bitcoin, Ethereum) uses a decentralized database model where each participant (node) has a copy of the ledger and validates transactions without relying on a central authority.
+
+#### $\text{Diagram}$
+
+![alt text](image-1.png)
 
 ---
 
@@ -37,6 +47,10 @@ A Relational Database (RDB) is a type of database that stores data in tables (al
 
 MySQL, PostgreSQL etc.
 
+#### $\text{Diagram}$
+
+![alt text](image-2.png)
+
 ---
 
 ### $\text{4. NO SQL}$
@@ -46,6 +60,10 @@ NoSQL stands for "Not Only SQL", and refers to a broad class of non-relational d
 #### $\text{Example}$
 
 MongoDB is one the best example of NO SQL.
+
+#### $\text{Diagram}$
+
+![alt text](image-3.png)
 
 ---
 
@@ -57,6 +75,10 @@ A Cloud Database is a database that runs on a cloud computing platform rather th
 
 Amazon, Google Cloud, Microsoft etc.
 
+#### $\text{Diagram}$
+
+![alt text](image-4.png)
+
 ---
 
 ### $\text{6. Object-Oriented Database (OODB)}$
@@ -67,6 +89,12 @@ An Object-Oriented Database (OODB) is a type of database that integrates object-
 
 db4o (Database for Objects), ObjectDB, Versant Object Database, InterSystems Caché, GemStone/S
 
+#### $\text{Diagram}$
+
+![alt text](image-5.png)
+
+---
+
 ### $\text{7. Hierarchical Database}$
 
 A Hierarchical Database is a type of database that organizes data in a tree-like structure. Data is stored in records (nodes), and each record is connected to its parent and children in a parent-child relationship. This structure is similar to a family tree or a folder directory in a computer.
@@ -74,6 +102,10 @@ A Hierarchical Database is a type of database that organizes data in a tree-like
 #### $\text{Example}$
 
 Early IBM Information Management System (IMS)
+
+#### $\text{Diagram}$
+
+![alt text](image-6.png)
 
 ---
 
@@ -85,6 +117,10 @@ The Network Database Model is a type of database model that represents data in a
 
 IDMS (Integrated Database Management System), Raima Database Manager, TurboIMAGE
 
+#### $\text{Diagram}$
+
+![alt text](image-7.png)
+
 ---
 
 ### $\text{9. Personal Database}$
@@ -94,6 +130,10 @@ A Personal Database is a database system designed for use by a single user on a 
 #### $\text{Example}$
 
 Microsoft Access, SQLite, MySQL
+
+#### $\text{Diagram}$
+
+![alt text](image-9.png)
 
 ---
 
@@ -105,6 +145,10 @@ An Operational Database (also called an OLTP database, which stands for Online T
 
 PostgreSQL, MySQL, Microsoft SQL Server.
 
+#### $\text{Diagram}$
+
+It can be distributed, relational or any other.
+
 ---
 
 ### $\text{11. Enterprise Database}$
@@ -114,6 +158,62 @@ An Enterprise Database is a large-scale, robust, and secure database system desi
 #### $\text{Example}$
 
 Oracle, SAP HANA etc.
+
+#### $\text{Diagram}$
+
+![alt text](image-8.png)
+
+#### Notes about diagram
+
+##### **Overall Structure (Concentric Circles)**
+
+* The architecture is **circular**, with multiple **layers of databases** forming the center and **users** accessing them from the outside.
+* Each layer stores different kinds of data and serves different purposes.
+
+##### Outer Circle: **Users (User 1 to User 8)**
+
+These are **end-users or applications** who need to access data.
+They interact with the system to get data, reports, insights, etc.
+
+##### Middle Ring: **Different Types of Databases**
+
+This ring contains various databases which serve specific roles:
+
+1. **Wholesale Data Warehouse DB’s**:
+
+   * Main storage of integrated, historical data from all sources.
+   * Acts as the central data repository.
+
+2. **TDSA DB’s (Tactical Decision Support Applications)**:
+
+   * Specialized databases used for quick tactical decision-making.
+   * Likely optimized for speed and specific types of queries.
+
+3. **Data Mart Databases**:
+
+   * Smaller databases built for specific departments (e.g., sales, HR).
+   * They get data from the warehouse but are more focused.
+
+4. **Data Capture DB’s**:
+
+   * Responsible for collecting data from various sources (operational systems).
+   * This is where **raw data first enters** the system.
+
+##### Inner Circle: **Subject Area DB’s**
+
+* Organized around **specific subjects or business areas** (e.g., customer, product, sales).
+* Helps in simplifying access and analysis for users focused on particular domains.
+
+##### Flow of Data (Inside → Out)
+
+1. Data is **captured** in **Data Capture DBs**.
+2. It is **transformed, cleaned, and stored** in the **Wholesale Data Warehouse**.
+3. This central warehouse feeds:
+
+   * **Subject Area DBs** (thematic breakdown)
+   * **Data Marts** (for specific user groups or departments)
+   * **TDSA DBs** (for decision-making)
+4. Finally, **users (User 1–8)** access the appropriate database depending on their needs.
 
 ---
 
@@ -163,4 +263,3 @@ Two users booking the last seat in a movie theater:
 If a bank confirms your transaction, it **must not be lost**, even if the system crashes right after.
 
 ---
-

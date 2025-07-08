@@ -1,0 +1,122 @@
+### 🧠 **I. Basics of Statistics**
+
+* What is Statistics?
+* Types of Data: Qualitative vs Quantitative
+* Scales of Measurement: Nominal, Ordinal, Interval, Ratio
+* Population vs Sample
+* Parameters vs Statistics
+
+---
+
+### 📊 **II. Descriptive Statistics**
+
+* Measures of Central Tendency: Mean, Median, Mode
+* Measures of Dispersion: Range, Variance, Standard Deviation, IQR
+* Shape of Data: Skewness, Kurtosis
+* Frequency Distribution
+* Percentiles and Quartiles
+* Data Visualization:
+
+  * Histograms
+  * Box Plots
+  * Bar Charts
+  * Pie Charts
+  * Scatter Plots
+
+---
+
+### 🎲 **III. Probability**
+
+* Basic Probability Concepts
+* Rules of Probability (Addition, Multiplication)
+* Conditional Probability
+* Bayes’ Theorem
+* Independent and Dependent Events
+* Probability Distributions
+
+---
+
+### 📈 **IV. Probability Distributions**
+
+* Discrete Distributions:
+
+  * Bernoulli
+  * Binomial
+  * Poisson
+  * Geometric
+* Continuous Distributions:
+
+  * Uniform
+  * Normal (Gaussian)
+  * Exponential
+  * t-distribution
+  * Chi-Square Distribution
+  * F-distribution
+* Central Limit Theorem (CLT)
+
+---
+
+### 🧪 **V. Inferential Statistics**
+
+* Sampling Methods (Random, Stratified, Cluster, etc.)
+* Sampling Distribution
+* Estimation:
+
+  * Point Estimates
+  * Confidence Intervals
+* Hypothesis Testing:
+
+  * Null and Alternative Hypotheses
+  * Type I and II Errors
+  * p-value
+  * t-test (one-sample, two-sample, paired)
+  * z-test
+  * Chi-square test
+  * ANOVA (Analysis of Variance)
+
+---
+
+### 🔢 **VI. Correlation and Regression**
+
+* Correlation Coefficient (Pearson, Spearman)
+* Simple Linear Regression
+* Multiple Linear Regression
+* Logistic Regression
+* Assumptions in Regression
+* Residual Analysis
+* Multicollinearity
+
+---
+
+### 🔍 **VII. Exploratory Data Analysis (EDA)**
+
+* Outlier Detection
+* Data Cleaning Techniques
+* Feature Engineering
+* Handling Missing Data
+* Transformation (log, square root, etc.)
+
+---
+
+### 🧮 **VIII. Advanced Statistical Techniques**
+
+* Principal Component Analysis (PCA)
+* Time Series Analysis
+
+  * Stationarity
+  * ACF & PACF
+  * ARIMA
+* Bootstrapping
+* Cross-validation
+* Bayesian Statistics
+
+---
+
+### ⚙️ **IX. Statistical Tools & Programming**
+
+* Using **Python** (NumPy, Pandas, SciPy, Statsmodels)
+* Using **R** (ggplot2, dplyr, tidyr)
+* Using **Excel** (basic statistical functions)
+* Jupyter Notebooks for experimentation
+
+---

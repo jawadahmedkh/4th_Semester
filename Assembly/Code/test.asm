@@ -1,6 +1,6 @@
 ;mode:32
 section .data
-    msg db "Hello from 32-bit!", 0xA
+    msg db "Hello from Assembly", 0xA
     len equ $ - msg
 
 section .text
