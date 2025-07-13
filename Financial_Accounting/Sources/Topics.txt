@@ -1,0 +1,43 @@
+### **Foundational Concepts**
+
+1. **Business**
+2. **Proprietor**
+3. **Capital / Owner Equity**
+4. **Finance**
+5. **Accounting**
+6. **Financial Accounting**
+
+---
+
+### **Basic Accounting Elements**
+
+7. **Assets**
+8. **Liability**
+9. **Account**
+10. **Types of Accounts (Real, Nominal, Personal)**
+11. **Types of Accounts** *(could merge with above or be placed just after)*
+12. **Debtor**
+13. **Creditor**
+14. **Bad Debts**
+
+---
+
+### **Accounting Tools & Formats**
+
+15. **Forms of Account (T Account, 3 Column Running Account)**
+16. **Particular (Description)**
+17. **Voucher**
+
+---
+
+### **Accounting Process**
+
+18. **Transaction**
+19. **Accounting Equation**
+20. **Accounting Cycle / Flow of Transaction**
+21. **Journal**
+22. **Journal Practice**
+23. **Ledger**
+24. **3 Column Running Account Practice**
+
+---
