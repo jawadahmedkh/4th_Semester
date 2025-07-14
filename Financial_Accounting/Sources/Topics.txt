@@ -17,6 +17,8 @@
 10. **Types of Accounts (Real, Nominal, Personal)**
 11. **Types of Accounts** *(could merge with above or be placed just after)*
 12. **Debtor**
+
+
 13. **Creditor**
 14. **Bad Debts**
 
