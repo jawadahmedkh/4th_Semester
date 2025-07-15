@@ -75,3 +75,113 @@ the established businessman to a small shopkeeper, everybody has created dearnes
 Yours Truly
 Jawad Ahmed
 ```
+
+---
+
+## Topical Arrangements in Technical Writing
+
+### **1. Chronological Arrangement**
+
+**Meaning:**
+This method presents information in the order it happened — from the beginning to the end. It's based on **time** (chrono = time).
+
+**Example:**
+A report on **how a mobile phone was developed over the years**:
+
+* 1990s: Basic calling and texting phones
+* 2000s: Flip phones and cameras
+* 2010s: Touchscreen smartphones
+* 2020s: AI-powered phones
+
+**Real-life use:** Writing your **daily routine**, historical events, or instructions (like recipes or user manuals).
+
+---
+
+### **2. Spatial Arrangement**
+
+**Meaning:**
+This method organizes details based on **location or space** — top to bottom, left to right, near to far, etc.
+
+**Example:**
+Describing the layout of a **classroom**:
+
+* Front: Teacher’s table and board
+* Middle: Student desks
+* Back: Bookshelf and windows
+* Left wall: Whiteboard
+* Right wall: Bulletin board
+
+**Real-life use:** Writing about **building layouts, machine descriptions, or maps**.
+
+---
+
+### **3. Cause and Effect Arrangement**
+
+**Meaning:**
+This explains **why something happened (cause)** and **what happened as a result (effect)**.
+
+**Example:**
+**Cause:** Heavy rain for 3 days
+**Effect:** Flooding in the city, school closures, and traffic jams
+
+**Real-life use:** Accident reports, environmental impact reports, or explaining software bugs.
+
+---
+
+### **4. Problem and Solution Arrangement**
+
+**Meaning:**
+You present a **problem** first, then offer **one or more solutions**.
+
+**Example:**
+**Problem:** Students are not attending classes regularly.
+**Solution:** Start attendance rewards, improve teaching style, conduct engaging activities.
+
+**Real-life use:** Business proposals, project pitches, and customer service responses.
+
+---
+
+### **5. Compare and Contrast Arrangement**
+
+**Meaning:**
+This method compares two or more things, showing **similarities (compare)** and **differences (contrast).**
+
+**Example:**
+Comparing **online classes vs. physical classes**:
+
+* Similarity: Both offer learning
+* Difference: Online is flexible, but physical offers better interaction
+
+**Real-life use:** Product reviews, selecting between two options (e.g. buying a car vs. bike).
+
+---
+
+### **6. Logical or Functional Arrangement**
+
+**Meaning:**
+Information is arranged in a **step-by-step or logical sequence** — from general to specific, simple to complex, or according to function.
+
+**Example:**
+Explaining how a **car engine works**:
+
+1. Fuel enters
+2. Spark ignites fuel
+3. Engine converts energy
+4. Car moves
+
+**Real-life use:** Technical manuals, science explanations, or software documentation.
+
+---
+
+### Summary Table
+
+| Arrangement Type     | What it’s About                      | Real-Life Example              |
+| -------------------- | ------------------------------------ | ------------------------------ |
+| Chronological        | Order of time                        | History of smartphones         |
+| Spatial              | Order of location                    | Describing classroom layout    |
+| Cause and Effect     | Reason and result                    | Rain causes flooding           |
+| Problem and Solution | Issue + fix                          | Low attendance → Reward system |
+| Compare and Contrast | Similarities & Differences           | Online vs. Physical classes    |
+| Logical / Functional | Step-by-step, functionally explained | How a car engine works         |
+
+---
