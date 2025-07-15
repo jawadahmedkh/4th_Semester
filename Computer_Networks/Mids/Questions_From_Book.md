@@ -1,4 +1,4 @@
-# Questions
+# $$\boxed{\text{Questions from Book (By No-One)}}$$
 
 1. Why are protocols needed?
 2. Identify the five components of a data communications system?
@@ -27,3 +27,71 @@
 21. What are the responsibilities of the network layer in the Internet model?
 22. What are the responsibilities of the transport layer in the Internet model?
 23. How are OSI and ISO related to each other?
+24. What is the relationship between period and frequency?
+25. What does the amplitude of a signal measure? What does the frequency of a signal
+measure? What does the phase of a signal measure?
+1. What is the relationship between period and frequency?
+2. What does the amplitude of a signal measure? What does the frequency of a signal
+measure? What does the phase of a signal measure?
+3. How can a composite signal be decomposed into its individual frequencies?
+4. Name three types of transmission impairment.
+5. Distinguish between baseband transmission and broadband transmission.
+6. Distinguish between a low-pass channel and a band-pass channel.
+7. What does the Nyquist theorem have to do with communications?
+8. What does the Shannon capacity have to do with communications?
+9. Why do optical signals used in fiber optic cables have a very short wave length?
+10. Can we say if a signal is periodic or nonperiodic by just looking at its frequency
+domain plot? How?
+11. Is the frequency domain plot of a voice signal discrete or continuous?
+12. Is the frequency domain plot of an alarm system discrete or continuous?
+13. We send a voice signal from a microphone to a recorder. Is this baseband or broad-
+band transmission?
+14. We send a digital signal from one station on a LAN to another station. Is this base-
+band or broadband transmission?
+15. We modulate several voice signals and send them through the air. Is this baseband
+or broadband transmission?
+16. Given the frequencies listed below, calculate the corresponding periods.
+    a. 24Hz
+    b. 8 MHz
+    c. 140 KHz
+17. Given the following periods, calculate the corresponding frequencies.
+    a. 5 s
+    b. 12 Jls
+    c. 220 ns
+18. What is the phase shift for the foIlowing?
+    a. A sine wave with the maximum amplitude at time zero
+    b. A sine wave with maximum amplitude after 1/4 cycle
+    c. A sine wave with zero amplitude after 3/4 cycle and increasing
+19. What is the bandwidth of a signal that can be decomposed into five sine waves
+with frequencies at 0, 20, 50, 100, and 200 Hz? All peak amplitudes are the same.
+Draw the bandwidth.
+20. A periodic composite signal with a bandwidth of 2000 Hz is composed of two sine
+waves. The first one has a frequency of 100 Hz with a maximum amplitude of 20 V;
+the second one has a maximum amplitude of 5 V. Draw the bandwidth.
+21. Which signal has a wider bandwidth, a sine wave with a frequency of 100 Hz or a
+sine wave with a frequency of 200 Hz?
+22. What is the bit rate for each of the following signals?
+    a. A signal in which 1 bit lasts 0.001 s
+    b. A signal in which 1 bit lasts 2 ms
+    c. A signal in which 10 bits last 20 J-ls
+23. A device is sending out data at the rate of 1000 bps.
+    a. How long does it take to send out 10 bits?
+    b. How long does it take to send out a single character (8 bits)?
+    c. How long does it take to send a file of 100,000 characters?
+24. A line has a signal-to-noise ratio of 1000 and a bandwidth of 4000 KHz. What is
+the maximum data rate supported by this line?
+37. We measure the performance of a telephone line (4 KHz of bandwidth). When the
+signal is 10 V, the noise is 5 mV. What is the maximum data rate supported by this
+telephone line?
+39. A file contains 2 million bytes. How long does it take to download this file using a
+56-Kbps channel? 1-Mbps channel?
+44. We have a channel with 4 KHz bandwidth. If we want to send data at 100 Kbps,
+what is the minimum SNRdB ? What is SNR?
+47. How many bits can fit on a link with a 2 ms delay if the bandwidth of the link is
+    a. 1 Mbps?
+    b. 10 Mbps?
+    c. 100 Mbps?
+48. A network with bandwidth of 10 Mbps can pass only an average of 12,000 frames per minute with each frame carrying an average of 10,000 bits. What is the throughput of this network?
+
+
+$$\boxed{\text{All Answers are given in the Book Study Thoroughly OR Chatgpt is Best Shortcut.}}$$
