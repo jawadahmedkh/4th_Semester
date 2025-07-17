@@ -33,3 +33,11 @@
 * Part-time online work (3 hours/day)
 
 ---
+
+## ⚙️ Challenges
+
+* Poor **time management**
+* Feeling **weak** (need for regular **exercise and diet**)
+* **Mental pressure** (juggling many things)
+
+---

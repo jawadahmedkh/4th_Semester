@@ -1,14 +1,4 @@
-# Time
-
-## ⚙️ Challenges
-
-* Poor **time management**
-* Feeling **weak** (need for regular **exercise and diet**)
-* **Mental pressure** (juggling many things)
-
----
-
-## 📆 MY Weekly Schedule
+# 📆 MY Weekly Schedule
 
 | Time            | Mon–Fri                                                                        | Sat–Sun                                                  |
 | --------------- | ------------------------------------------------------------------------------ | -------------------------------------------------------- |
@@ -26,7 +16,7 @@
 
 ---
 
-### Subject Focus (Night Study 1 Hour)
+## Subject Focus (Night Study 1 Hour)
 
 | Day       | Subject                           |
 | --------- | --------------------------------- |
