@@ -199,8 +199,7 @@ The languages can be defined in different ways, such as **Descriptive Definition
 The language is defined, describing the conditons imposed on its words.
 
 1. Let us consider Language **L** of strings of odd length defined over alphabet $\sum = \{a\}$ can be written as $L = \{ a, aaa, aaaaa, \cdots\}$
-
-2.  Let us consider another Language **L** that does not start with a, defined over $\sum = \{a,b,c\}$ can be written as $$L = \{b,c,ba,bb,ca,cb,ce,\cdots\}$$
+2. Let us consider another Language **L** that does not start with a, defined over $\sum = \{a,b,c\}$ can be written as $$L = \{b,c,ba,bb,ca,cb,ce,\cdots\}$$
 3. Let us Consider language **L** of strings of length **2** over $\sum \{0,1,2\}$ can be written as $L = \{00,01,02,10,11,12,20,21,22\}$
 4. Let us consider language **L** of strings Integer defined over $\sum \{-,0,1,2,3,4,5,6,7,8,9\}$ can be written as $INTEGER = \{\cdots \cdots -2,-1,0,1,2\}$
 5. Let us consider language $L(a^nb^n)$ of string defined over $\sum \{a,b\}$ can be written as $\{a^nb^n\: 1,2,3,4,5,\cdots\}$ or $\{ab,aabb,\cdots \}$
