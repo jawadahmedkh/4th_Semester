@@ -1,0 +1,112 @@
+\documentclass[12pt,a4paper]{article}
+
+% Packages
+\usepackage[utf8]{inputenc}
+\usepackage{amsmath, amssymb}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+\usepackage{array}
+\geometry{margin=1in}
+
+% Header & Footer
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{Theory of Automata and Formal Languages}
+\fancyhead[R]{Assignment No. 1}
+\fancyfoot[C]{\thepage}
+
+% Title Page
+\title{\textbf{Assignment No. 1}\\
+\large Theory of Automata and Formal Languages}
+\author{
+\textbf{Name:} Your Full Name \\
+\textbf{Roll No:} Your Roll Number \\
+\textbf{Department:} Your Department Name \\
+\textbf{Semester:} Your Semester
+}
+\date{\today}
+
+\begin{document}
+
+\maketitle
+\thispagestyle{empty}
+\newpage
+
+\tableofcontents
+\newpage
+
+% ---------------- INTRODUCTION ----------------
+\section{Introduction}
+Automata Theory and Formal Languages provide the foundation of computation. 
+They describe the mathematical models of machines and the languages recognized by these machines. 
+This subject is fundamental in compiler design, artificial intelligence, and complexity theory.
+
+% ---------------- QUESTIONS & SOLUTIONS ----------------
+\section{Questions \& Solutions}
+
+\subsection*{Q1. Write the Question Here}
+\textbf{Answer:}  
+Example of a language definition:  
+\[
+L = \{ w \in \{0,1\}^* \mid w \text{ has even number of 0's} \}
+\]
+
+Finite Automaton (FA) states can be represented as:  
+
+\begin{center}
+\begin{tabular}{|c|c|c|}
+\hline
+State & Input 0 & Input 1 \\
+\hline
+$q_0$ (Start) & $q_1$ & $q_0$ \\
+$q_1$ & $q_0$ & $q_1$ \\
+\hline
+\end{tabular}
+\end{center}
+
+% ----------------
+\subsection*{Q2. Write the Question Here}
+\textbf{Answer:}  
+
+Regular Expression for strings ending with 01:
+\[
+RE = (0+1)^*01
+\]
+
+% ----------------
+\subsection*{Q3. Write the Question Here}
+\textbf{Answer:}  
+
+Example of a Context Free Grammar (CFG):  
+\[
+S \rightarrow 0S1 \ | \ \epsilon
+\]
+
+% ----------------
+\subsection*{Q4. Write the Question Here}
+\textbf{Answer:}  
+
+Example Proof:  
+\begin{enumerate}
+    \item Assume language $L = \{ 0^n1^n \mid n \geq 0 \}$.
+    \item Show it cannot be represented by a finite automaton.
+    \item Using Pumping Lemma, contradiction arises.
+    \item Therefore, $L$ is \textbf{not regular}.
+\end{enumerate}
+
+% ---------------- CONCLUSION ----------------
+\section{Conclusion}
+This assignment enhanced my understanding of Regular Expressions, Finite Automata, and Context Free Grammars. 
+It also demonstrated the importance of Pumping Lemma in proving non-regular languages.
+
+% ---------------- REFERENCES ----------------
+\section{References}
+\begin{itemize}
+    \item Hopcroft, J. E., Motwani, R., Ullman, J. D. \textit{Introduction to Automata Theory, Languages, and Computation}.
+    \item Lecture Notes provided by Instructor.
+    \item Online resources: \href{https://www.geeksforgeeks.org/automata-theory/}{GeeksforGeeks}, TutorialsPoint.
+\end{itemize}
+
+\end{document}

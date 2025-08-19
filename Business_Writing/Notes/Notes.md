@@ -25,7 +25,7 @@ It is the process of conveying complex technical information to a specific audie
 | Word | Meanings/Definitions |
 |----------|----------|
 | Clear   | Without ambiguity     |
-| Concise    | Short, Brief, Succenct   |
+| Concise    | Short, Brief  |
 | Subjective | Involved Personal liking and disliking|
 | Register | Name of professional language|
 
