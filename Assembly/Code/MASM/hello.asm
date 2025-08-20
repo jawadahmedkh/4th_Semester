@@ -2,7 +2,7 @@
 INCLUDE Irvine32.inc
 
 .DATA
-Nam byte "Abdual Qaddous", 0dh, 0ah
+Nam Byte "Abdual Qaddous", 0dh, 0ah
     Byte "My Contact 0355-8073602", 0dh, 0ah
     Byte "I Have Assign a Lab Task to my student", 0dh, 0ah
     Byte "It Was Just Starting Of Lab Tsk", 0
@@ -11,7 +11,6 @@ Nam byte "Abdual Qaddous", 0dh, 0ah
         Call clrscr
         Lea edx, nam
         Call WriteString
-        Call DumpRegs
         Exit
     Main ENDP
     END Main
