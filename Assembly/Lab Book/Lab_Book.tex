@@ -1,0 +1,55 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel} % Changed from Italian to English
+\usepackage{graphicx, subfigure}
+\usepackage[absolute]{textpos}	
+
+\title{University of AJ\&K Neelum Campus Cover Page}
+
+% This contains only what's needed for the cover page
+% I'm not sure all packages are necessary but they work
+
+\newenvironment{sistema}%
+{\left\lbrace\begin{array}{@{}l@{}}}%
+{\end{array}\right.}
+
+\begin{document}
+\pagestyle{empty}
+
+\begin{textblock}{0}(1.3,0.9)
+\begin{center}
+\begin{tabular}{c}
+{\Huge \bf University of AJ\&K Neelum Campus\\[10pt]}
+\hline\\[20pt]
+{\bf \huge \sc School of Sciences} \\[10pt] % Translated
+{\huge Department of Mathematics and Applications} \\[15pt]
+\includegraphics[width=7cm]{image.pdf}\\[15pt]
+{\huge Bachelor's Degree in Mathematics}\\[60pt] % Translated
+{\hbox to 8truecm{\hrulefill}}\\[5pt]
+{\bf \huge \sc Final Thesis}\\[15pt] % Translated
+{\huge \bf TITLE}\\[5pt] % Translated
+{\hbox to 8truecm{\hrulefill}}\\[50pt]
+
+\begin{minipage}[t]{10cm}
+	{\Large{\bf Instructor:\\ Sir Abdul Qudoos}}
+\end{minipage}\hfill\begin{minipage}[t]{5cm}\raggedleft
+	{\Large{\bf Name: \\Jawad Ahmed\\ }}
+\end{minipage} \\[90pt]
+{\Large Defense Date: xx/yy/zzzz} \\ [5pt] % Translated
+
+\hline\\[10pt]
+\bf \LARGE Academic Year 202X--202Y % Translated
+\end{tabular}
+\end{center}
+\end{textblock}
+\newpage
+
+% If you want to include it in the file with the rest of the thesis, use these (otherwise your pages will get misaligned):
+
+%\thispagestyle{empty}
+%\phantom{}
+%\eject
+
+% If you want to add a blank page (here or somewhere else), repeat these 3 commands
+
+\end{document}
