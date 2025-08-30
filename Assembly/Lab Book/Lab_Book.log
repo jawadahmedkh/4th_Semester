@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2025.8.30)  31 AUG 2025 00:00
+This is pdfTeX, Version 3.141592653-2.6-1.40.28 (TeX Live 2025/Debian) (preloaded format=pdflatex 2025.8.30)  31 AUG 2025 00:11
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -396,11 +396,11 @@ Package pdftex.def Info: image.png  used on input line 29.
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./image.png (PNG copy)>] (./Lab_Book.toc
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <12> on input line 2.
+(Font)              <12> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 2.
+(Font)              <8> on input line 1.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 2.
+(Font)              <6> on input line 1.
 )
 \tf@toc=\write4
 \openout4 = `Lab_Book.toc'.
@@ -408,26 +408,31 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 
 
 [1]
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <17.28> on input line 65.
 
-[2] (./Lab_Book.aux)
+
+[2]
+
+[3] (./Lab_Book.aux)
  ***********
 LaTeX2e <2025-06-01> patch level 1
 L3 programming layer <2025-07-19>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16132 strings out of 469797
- 334059 string characters out of 5482835
- 709735 words of memory out of 5000000
- 44278 multiletter control sequences out of 15000+600000
- 631248 words of font info for 55 fonts, out of 8000000 for 9000
+ 16137 strings out of 469797
+ 334147 string characters out of 5482835
+ 713739 words of memory out of 5000000
+ 44283 multiletter control sequences out of 15000+600000
+ 631863 words of font info for 57 fonts, out of 8000000 for 9000
  14 hyphenation exceptions out of 8191
- 98i,5n,101p,477b,589s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 98i,5n,101p,477b,587s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmtt12.pfb>
-Output written on Lab_Book.pdf (3 pages, 109162 bytes).
+Output written on Lab_Book.pdf (4 pages, 111400 bytes).
 PDF statistics:
- 33 PDF objects out of 1000 (max. 8388607)
- 20 compressed objects within 1 object stream
+ 36 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  18 words of extra memory for PDF output out of 10000 (max. 10000000)
 

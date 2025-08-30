@@ -62,15 +62,17 @@
 \newpage
 
 
-\section{Hello World Program}
+\section{\underline{Hello World in Assembly}}
 \subsection{Description}
+This is a simple assembly language program that displays the message "Hello, from Assembly!" on the screen.
+
 \subsection{Code}
 \begin{tcolorbox}[colback=white,colframe=black,title=Hello World Program]
 \begin{verbatim}
 .686
 INCLUDE Irvine32.inc 
 .data
-    msg BYTE "Hello, from Assembly!", 0Ah
+    msg BYTE "Hello, from Assembly!",0
 .code
     Main PROC
         lea edx, msg
@@ -85,10 +87,33 @@ INCLUDE Irvine32.inc
 \subsection{Output}
 \begin{tcolorbox}[colback=white,colframe=black,title=Output]
 \begin{verbatim}
-Hello, From Assembly!
+Hello, from Assembly!
 \end{verbatim}
 \end{tcolorbox}
 
+\section{\underline{Adding Two Numbers}}
+
+\begin{tcolorbox}[colback=white,colframe=black,title=Hello World Program]
+    \begin{verbatim}
+        .686
+        INCLUDE Irvine32.inc 
+
+        .data
+            number1 BYTE 10
+            number2 BYTE 10
+        .code
+            Main PROC
+                mov al, number1
+                add al, number2
+
+                movzx eax, al
+                Call Clrscr
+                Call WriteInt
+                EXIT
+                Main ENDP
+                END Main
+    \end{verbatim}
+\end{tcolorbox}
 
 
 
