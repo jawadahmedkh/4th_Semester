@@ -2,10 +2,23 @@
 \usepackage[utf8]{inputenc}
 \usepackage{graphicx}
 \usepackage{geometry}
+\usepackage{everypage}
 \usepackage{listings} % For code formatting
 \usepackage{xcolor}   % For coloring code
 \usepackage{tcolorbox} % For colored boxes
+\usepackage{tikz}
 
+
+\usepackage{atbegshi}
+\AtBeginShipout{%
+  \AtBeginShipoutUpperLeft{%
+    \begin{tikzpicture}[remember picture,overlay]
+      \draw[line width=3pt, rounded corners=20pt]
+        ([xshift=1cm,yshift=-1cm]current page.north west) rectangle
+        ([xshift=-1cm,yshift=1cm]current page.south east);
+    \end{tikzpicture}%
+  }%
+}
 \geometry{a4paper, margin=1in}
 
 % Code style
@@ -15,11 +28,12 @@
   frame=single,
   numbers=left,
   numberstyle=\tiny,
-  keywordstyle=\color{blue},
+  keywordstyle=\color{green},
   commentstyle=\color{green!50!black},
   stringstyle=\color{orange},
   showstringspaces=false
 }
+
 
 \begin{document}
 \begin{titlepage}
@@ -62,7 +76,7 @@
 \newpage
 
 
-\section{\underline{Hello World in Assembly}}
+\section{\color{magenta}\underline{Hello World in Assembly}}
 \subsection{Description}
 This is a simple assembly language program that displays the message "Hello, from Assembly!" on the screen.
 
