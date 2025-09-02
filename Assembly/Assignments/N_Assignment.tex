@@ -1,0 +1,136 @@
+\documentclass[a4paper,12pt]{report}
+\usepackage{graphicx}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{setspace}
+\usepackage{titlesec}
+
+% Code formatting (black and white)
+\lstset{
+  basicstyle=\ttfamily\small,
+  backgroundcolor=\color{black!5},
+  frame=single,
+  numbers=none,
+  numberstyle=\tiny,
+  keywordstyle=\color{black}\bfseries,
+  commentstyle=\itshape,
+  breaklines=true
+}
+
+% Title formatting
+\titleformat{\chapter}[hang]{\bfseries\huge}{\thechapter}{2pc}{}
+
+\begin{document}
+
+% ---------------- Cover Page ----------------
+\begin{titlepage}
+    \centering
+    {\Large \textbf{University of AJ\&K Neelum Campus}}\\[1cm]
+    \includegraphics[width=0.3\textwidth]{image.png}\\[1cm] % Replace with your university logo
+    \rule{\textwidth}{1pt} \\[0.5cm]
+    {\Large \textbf{Computer Organization \& Assembly Language Assignment}}\\[0.2cm]
+    \rule{\textwidth}{1pt} \\[1.2cm]
+    \begin{center}
+        \Large \textbf{Topic}\\[0.5cm]
+        \Large \textbf{Finding Minimum Value in an Array}\\ [2cm]
+
+        \Large \textbf{Submitted By:}\\
+        Naveed Iqbal
+    \end{center}
+    
+\end{titlepage}
+
+% ---------------- Table of Contents ----------------
+
+\begin{titlepage}
+    \centering
+    \vspace*{3cm}
+    
+    {\Huge \textbf{Name:} Naveed Iqbal \par}
+    \vspace{1cm}
+    
+    {\Large \textbf{Roll No:} 24 \par}
+    \vspace{1cm}
+    
+    {\Large \textbf{Subject:} Computer Organization \& Assembly Language \par}
+    \vspace{1cm}
+    
+    {\Large \textbf{Instructor:} Sir Abdual Qaddous \par}
+    \vspace{1cm}
+    
+    {\Large \textbf{Semester:} 4 \par}
+    \vfill
+    
+    {\large \textbf{Submission Date:} \today \par}
+    
+\end{titlepage}
+
+\thispagestyle{empty}
+\newpage
+
+% ---------------- Question Statement ----------------
+\section{Question Statement}
+\noindent
+\textbf{Q:} Write a program in Assembly language for finding minimum value in an array.
+
+% ---------------- Program Code ----------------
+\section{Program Code}
+
+\begin{lstlisting}[language={[x86masm]Assembler}]
+.686
+.model flat, stdcall
+.stack 4096
+INCLUDE Irvine32.inc
+
+.data
+    arr DWORD 10, 25, 3, 42, 18       ; Array of numbers
+    arrSize DWORD 5                   ; Number of elements
+    minVal DWORD ?                    ; To store minimum value
+
+    msg1 BYTE "The minimum value in array is: ", 0
+
+.code
+main PROC
+    mov ecx, arrSize                  ; Set loop counter = number of elements
+    mov eax, arr[0]                   ; Assume first element is minimum
+    mov esi, OFFSET arr               ; Point to array
+    add esi, 4                        ; Move to 2nd element
+
+    dec ecx                           ; Already considered 1 element
+L1: cmp eax, [esi]                    ; Compare current min (EAX) with next element
+    jle Skip                          ; If EAX <= element, skip update
+    mov eax, [esi]                    ; Else update min
+Skip:
+    add esi, 4                        ; Move to next element
+    loop L1
+
+    mov minVal, eax                   ; Store result
+
+    ; Display result
+    call Clrscr
+    mov edx, OFFSET msg1
+    call WriteString
+    mov eax, minVal
+    call WriteInt
+    call Crlf
+
+    exit
+main ENDP
+END main
+\end{lstlisting}
+
+% ---------------- Output Explanation ----------------
+\section{Output Explanation}
+\begin{itemize}
+    \item The array is defined as: \{15, 3, 25, 7, 9, 2, 30\}.
+    \item Initially, the first element (15) is assumed to be the minimum.
+    \item Each element is compared with the current minimum.
+    \item If a smaller value is found, it updates the minimum.
+    \item Finally, the program prints the minimum value (which is 2).
+\end{itemize}
+
+% ---------------- Conclusion ----------------
+\section{Conclusion}
+This program successfully finds the minimum value in an array by iterating through each element and comparing it with the current minimum. It demonstrates the use of loops, comparisons, and register manipulation in Assembly language.
+
+\end{document}
